@@ -10,7 +10,10 @@ use App\Models\Movie;
 class PageController extends Controller
 {
     function index(){
+        
+        $movies = Movie::all();
 
+        dump($movies);
 
         return view('home');
     }
