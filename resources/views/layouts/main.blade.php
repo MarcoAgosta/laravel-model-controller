@@ -8,8 +8,10 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-    
-    @yield('content')
+    <div class="container">
+        <h1 class="text-center">Lista di Film nel database</h1>
+        @yield('content')
+    </div>
 
 </body>
 </html>

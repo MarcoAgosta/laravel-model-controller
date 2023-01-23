@@ -13,8 +13,8 @@ class PageController extends Controller
         
         $movies = Movie::all();
 
-        dump($movies);
-
-        return view('home');
+        return view('home', [
+            "movies"=>$movies
+        ]);
     }
 }
